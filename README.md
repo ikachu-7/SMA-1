@@ -10,6 +10,24 @@ This project is a Twitter scraper that collects tweets from Twitter (X) using Se
 - **Data Storage**: Saves extracted tweets in JSON format.
 - **CSV Export**: Converts the JSON data to CSV for easy analysis.
 
+## JSON Fields
+The scraped data is stored in `tweets.json` with the following structure:
+```json
+[
+  {
+    "href": "Tweet URL",
+    "text": "Tweet content",
+    "timestamp": "Tweet timestamp",
+    "replies": "Number of replies",
+    "reposts": "Number of reposts",
+    "likes": "Number of likes",
+    "bookmarks": "Number of bookmarks",
+    "views": "Number of views",
+    "scrapingTimestamp": "Time when the data was scraped"
+  }
+]
+```
+
 ## Requirements
 ### Python Packages
 Ensure you have the following Python packages installed:
@@ -48,7 +66,7 @@ This will generate `tweets.csv`.
 - Uncomment `chrome_options.add_argument("--headless")` in `set_up_driver()` to run in headless mode.
 
 ## Limitations & Considerations
-- **Twitter Rate Limits**: Frequent scraping may trigger rate limits.
+- **Twitter Rate Limits**: Frequent scraping may trigger rate limits or require login.
 - **Dynamic Content**: Twitter changes its HTML structure frequently, so the script may need updates.
 - **IP Blocking**: Use proxies or rotate user agents to reduce detection risk.
 
@@ -56,5 +74,5 @@ This will generate `tweets.csv`.
 This project is open-source and available under the MIT License.
 
 ## Author
-[Sagar Singh and Tiwari Vivek]
+Sagar Singh and Tiwari Vivek
 
