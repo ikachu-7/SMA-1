@@ -66,7 +66,7 @@ This will generate `tweets.csv`.
 - Uncomment `chrome_options.add_argument("--headless")` in `set_up_driver()` to run in headless mode.
 
 ## Limitations & Considerations
-- **Twitter Rate Limits**: Frequent scraping may trigger rate limits or require login.
+- **Twitter Rate Limits**: Frequent scraping may trigger rate limits.
 - **Dynamic Content**: Twitter changes its HTML structure frequently, so the script may need updates.
 - **IP Blocking**: Use proxies or rotate user agents to reduce detection risk.
 
